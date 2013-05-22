@@ -36,6 +36,48 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <!-- This script includes the necessary code needed for the Whateverweb.com client-side Device Detection
+            For usage examples see: https://github.com/whateverweb/device-detection/blob/master/examples/APIdemo
+        -->
+        <script src="js/vendor/wew.js"></script>
+        
+        <!-- This inline script sets a cookie used by the Whateverweb.com Image Server
+            PS! Make sure you change the cookie domain.
+        -->
+        <script>
+            var wewNS = wewNS || {};
+            wewNS.domain = ".wew.io";
+            wewNS.breakpoints = [['w', 768], ['m', 320], ['n', 0]]; //Make sure these breakpoints are in descending order
+            
+            
+            //Set width of screen in a cookie
+            (function (w, d) {
+                
+                //assign width to vpw
+                var e = d.documentElement,
+                    g = d.getElementsByTagName('body')[0],
+                    vpw = w.innerWidth || e.clientWidth || g.clientWidth;
+                var bp;
+        
+                //set active breakpoint
+                for (var i = 0; i < wewNS.breakpoints.length; i++) {
+                    if (vpw >= wewNS.breakpoints[i][1]) {
+                        bp = wewNS.breakpoints[i][0];
+                        break;
+                    }
+                }
+                
+                // Set devicePixelRatio, override on high-resolution screens 
+                var dpr = 1;
+                if(window.devicePixelRatio !== undefined) dpr = window.devicePixelRatio;
+                
+                // Make sure to use your own domain
+                var ccapDate = new Date()
+                ccapDate.setFullYear(ccapDate.getFullYear() + 1);
+                d.cookie = 'RESS=vpw.' + vpw + '|bp.' + bp + '|dpr.' + dpr + '; domain=' + wewNS.domain;
+            } (window, document));
+	</script>
     </head>
     <body>
 
