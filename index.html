@@ -76,12 +76,50 @@
                 var ccapDate = new Date()
                 ccapDate.setFullYear(ccapDate.getFullYear() + 1);
                 d.cookie = 'RESS=vpw.' + vpw + '|bp.' + bp + '|dpr.' + dpr + '; domain=' + wewNS.domain;
+                console.log('Cookie should have been set')
             } (window, document));
 	</script>
     </head>
     <body>
 
         <!-- Add your site or application content here -->
+        
+        <header>HTML5 Mobile Boilerplate integrated with Whateverweb.com</header>
+        
+        <p>
+            <blockquote>The following output is an example of how to use the Device Detection from Whateverweb.com:
+                <p>
+                    <div id="single"></div>
+                    
+                    <div id="set"></div>
+                </p>
+            </blockquote>
+        </p>
+        
+        <p>
+            <img id ="img3" src="http://img.demo.wew.io/vpw_1920/bp_w/pc/w_31/m_48/n_98/http://farm1.staticflickr.com/154/369525606_c77b69e92c_o_d.jpg" alt="Butterfly" />
+        </p>
+        
+        
+        
+        <script language="javascript">
+            var WEW = WEW || {};
+            WEW.opts = {"ttl":"1000", "appID":"demo"};
+            var w=new wew(WEW);
+            w.getCap("device_os",callback);
+            w.getSet("myset",callbackSet);
+            
+            function callback(t){
+                var e = document.getElementById("single");
+                e.innerHTML = "We guess you run " + t.device_os;
+            }
+            
+            function callbackSet(t){
+                var e = document.getElementById("set");
+                e.innerHTML = (t.is_tables? "You're probably using a tablet" : "You're probably not on a tablet") + "<br>" + 
+                    ("Your screen resolution seems to be " + t.max_image_width + "x" + t.max_image_height);
+            }
+        </script>
 
         <script src="js/vendor/zepto.min.js"></script>
         <script src="js/helper.js"></script>
