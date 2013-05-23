@@ -1,5 +1,12 @@
 == HEAD
 
+* Add references to whateverweb.com documentation in README.md
+* Add example of Image Scaling using whateverweb.com to index.html
+* Add example of Device Detection using whateverweb.com to index.html
+* Add comments about how to use Whateverweb features to index.html
+
+== HEAD when doing the fork
+
 * Use 32x32 favicon.ico for HiDPI displays.
 * Remove named function expression in plugins.js
 
