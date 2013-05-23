@@ -1,12 +1,12 @@
-# [Mobile Boilerplate](http://mobileboilerplate.com/)
+# [Mobile Boilerplate Whateverweb.com edition](http://whateverweb.com/)
 
-Mobile Boilerplate is a professional front-end template that helps you build
+Mobile Boilerplate Whateverweb.com edition is a professional front-end template that helps you build
 fast and robust mobile web applications. Spend more time developing and less
-time reinventing the wheel.
+time reinventing the wheel. The Whateverweb.com services let you deliver better performing websites quicker.
 
-* Source: [https://github.com/h5bp/mobile-boilerplate](https://github.com/h5bp/mobile-boilerplate)
-* Homepage: [http://mobileboilerplate.com](http://mobileboilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+* Source: [https://github.com/whateverweb/mobile-boilerplate](https://github.com/whateverweb/mobile-boilerplate)
+* Homepage: [http://whateverweb.com](http://whateverweb.com)
+* Twitter: [@WhateverWeb](https://twitter.com/WhateverWeb)
 
 
 ## Quick start
