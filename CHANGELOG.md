@@ -1,5 +1,6 @@
 == HEAD
 
+* Added img-tag to media breakpoints
 * Add references to whateverweb.com documentation in README.md
 * Change CSS media query breakpoints to match the Image Scaling example in main.css
 * Add example of Image Scaling using whateverweb.com to index.html
