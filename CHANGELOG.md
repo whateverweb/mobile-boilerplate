@@ -1,5 +1,6 @@
 == HEAD
 
+* Fix wew.js to use viewport instead of screen resolution
 * Added img-tag to media breakpoints
 * Add references to whateverweb.com documentation in README.md
 * Change CSS media query breakpoints to match the Image Scaling example in main.css
