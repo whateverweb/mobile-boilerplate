@@ -17,6 +17,9 @@ or [download it](https://github.com/h5bp/mobile-boilerplate/zipball/master)
 
 ## Features
 
+* Device Description Repository access from [Whateverweb.com](http://whateverweb.com). Read the [docs](http://docs.whateverweb.com/css-processor/).
+* Image Scaling access from [Whateverweb.com](http://whateverweb.com). Read the [docs](http://docs.whateverweb.com/image-server/).
+* CSS processing access from [Whateverweb.com](http://whateverweb.com). Read the [docs](http://docs.whateverweb.com/device-detection/).
 * Mobile browser optimizations.
 * CSS normalizations and common bug fixes.
 * The latest Zepto.js.
